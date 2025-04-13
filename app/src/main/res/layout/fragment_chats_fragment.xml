@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Chats"
+    tools:context=".Group_fragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="18dp"
+        android:searchHintIcon="@null"
+        app:searchIcon="@drawable/search_alt_2_svgrepo_com"
+        app:closeIcon="@drawable/baseline_clear_24"
+        android:background="@drawable/search_back"
+        android:iconifiedByDefault="false"
+        android:focusable="false"
+        android:queryHint="Search..."
+        android:id="@+id/chats_searchView"/>
+
+    <!-- TODO: Update blank fragment layout -->
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_below="@+id/chats_searchView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/chats_recycler"/>
+<!--    <RelativeLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--       android:layout_gravity="end"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:backgroundTint="@color/primary"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginBottom="35dp"-->
+<!--        android:src="@drawable/groups_svgrepo_com"/>-->
+<!--    </RelativeLayout>-->
+
+    </RelativeLayout>
+</FrameLayout>

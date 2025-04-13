@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1010867156660",
+    "firebase_url": "https://cusocial-db-default-rtdb.firebaseio.com",
+    "project_id": "cusocial-db",
+    "storage_bucket": "cusocial-db.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010867156660:android:5d3b759aa8bb7a16b609e1",
+        "android_client_info": {
+          "package_name": "com.example.cusocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010867156660-o4gbqoise9k2i2c1h2kh4ctjddkbmai2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cusocial",
+            "certificate_hash": "6eff964ef090eb90cc377bd051f6fdbd107e1df4"
+          }
+        },
+        {
+          "client_id": "1010867156660-ol8bkvaavb4ednn1bhbjjkvromdjvtl9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdEj2rb6h3CZLCQKLIaNBSPZHo60mCZao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010867156660-ol8bkvaavb4ednn1bhbjjkvromdjvtl9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

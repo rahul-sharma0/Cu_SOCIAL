@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="13dp"
+    android:layout_marginHorizontal="11dp"
+    android:padding="7dp"
+    tools:context=".Profile_activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:id="@+id/head_profile"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+    
+    <ImageView
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/head_profile"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/profile_circular_image"
+        android:src="@drawable/add_camera_photo"
+        android:layout_marginBottom="7dp"/>
+    <TextView
+        android:layout_marginTop="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Profile Picture"
+        android:id="@+id/profile_delete_btn"
+        android:layout_below="@id/profile_circular_image"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:textSize="19sp"
+        android:id="@+id/profile_txt_fullname"
+        android:layout_below="@+id/head_profile"
+        android:editable="false"
+        android:focusable="false"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_below="@+id/profile_txt_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="11"
+        android:hint="UID"
+        android:textSize="15sp"
+        android:editable="false"
+        android:id="@+id/profile_txt_uid"
+        android:layout_marginBottom="12dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/profile_txt_uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="11"
+        android:hint="Email-Id"
+        android:editable="false"
+        android:textSize="18sp"
+        android:id="@+id/profile_txt_email"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_below="@+id/profile_txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Role"
+        android:editable="false"
+        android:textSize="18sp"
+        android:id="@+id/profile_txt_role"
+        android:textStyle="bold"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Status Message"
+        android:id="@+id/profile_txt_status_input"
+        android:layout_below="@+id/profile_txt_role"
+        android:layout_marginBottom="5dp"
+        app:counterEnabled="true"
+        app:endIconMode="clear_text"
+        app:counterMaxLength="75"
+        app:startIconDrawable="@drawable/status_list_1_svgrepo_com"
+        style="@style/Widget.Design.TextInputLayout"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:maxLength="75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="18sp"
+            android:inputType="textAutoComplete"
+            android:id="@+id/profile_txt_status"
+            android:textStyle="bold"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Contact number"
+        style="@style/Widget.Design.TextInputLayout"
+        android:id="@+id/profile_txt_contact_input"
+        android:layout_below="@+id/profile_txt_status_input"
+        android:layout_marginBottom="5dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/phone_call_1_svgrepo_com"
+        app:prefixText="+91-">
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+
+        android:textSize="18sp"
+        android:inputType="phone"
+        android:id="@+id/profile_txt_contact"
+        android:textStyle="bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/profile_txt_password_input"
+        android:layout_below="@+id/profile_txt_contact_input"
+        style="@style/Widget.Design.TextInputLayout"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/password_2_svgrepo_com"
+        android:layout_marginBottom="5dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="18sp"
+        android:inputType="textPassword"
+        android:id="@+id/profile_txt_password"
+        android:textStyle="bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_below="@+id/profile_txt_password_input"
+        android:drawableStart="@drawable/update_business_user_svgrepo_com"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/white"
+        android:id="@+id/profile_update_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginVertical="28dp"
+        android:paddingHorizontal="15dp"
+        android:layout_marginEnd="22dp"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@color/primary"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="325dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/announcements_back"
+    android:elevation="25dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="15dp">
+        <EditText
+            android:layout_marginHorizontal="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Announcement Title"
+            android:textSize="22sp"
+            android:layout_marginTop="2dp"
+            android:paddingHorizontal="7dp"
+            android:paddingVertical="4dp"
+            android:background="@drawable/text_back"
+            android:id="@+id/add_announcement_title"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_marginHorizontal="2dp"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="8dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_back"
+            android:paddingHorizontal="7dp"
+            android:paddingVertical="4dp"
+            android:id="@+id/add_announcement_body"
+            android:hint="Announcement Body"
+            android:textSize="18sp"/>
+        <RelativeLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/primary"
+                android:background="#F3C1C0C0"
+                android:elevation="25dp"
+                android:id="@+id/add_btn_cancel"
+                android:text="Cancel"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/primary"
+                android:elevation="25dp"
+                android:id="@+id/add_btn_submit"
+                android:textColor="@color/white"
+                android:text="Upload"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

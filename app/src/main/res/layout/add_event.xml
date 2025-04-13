@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#A5EDECEC"
+    android:elevation="25dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="15dp">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Design.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="45"
+            app:endIconMode="clear_text"
+            app:helperTextTextColor="#FF0000"
+            app:startIconDrawable="@drawable/sort_by_alphabet_svgrepo_com"
+            android:hint="Event Title">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_marginHorizontal="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:maxLength="45"
+            android:paddingVertical="4dp"
+            android:paddingHorizontal="7dp"
+            android:background="@drawable/text_back"
+            android:id="@+id/event_title"
+            android:textStyle="bold"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:startIconDrawable="@drawable/folder_alt_svgrepo_com"
+            app:counterEnabled="true"
+            app:endIconMode="clear_text"
+            app:counterMaxLength="104"
+            android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginHorizontal="2dp"
+            android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+            android:paddingVertical="4dp"
+            android:paddingHorizontal="7dp"
+           android:background="@drawable/text_back"
+            android:inputType="textAutoComplete"
+
+            android:maxLength="105"
+            android:id="@+id/add_event_body"
+            android:hint="Event Body"
+            android:textSize="18sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Design.TextInputLayout"
+                android:layout_width="match_parent"
+                android:hint="Event From"
+                android:layout_height="wrap_content"
+                app:startIconDrawable="@drawable/baseline_calendar_month_24">
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="8"
+               android:id="@+id/add_event_from"
+               android:editable="false"
+               android:focusable="false"
+               android:paddingVertical="4dp"
+               android:paddingHorizontal="7dp"
+               android:textSize="18sp"
+               android:background="@drawable/text_back"
+
+               />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Design.TextInputLayout"
+                android:layout_width="match_parent"
+                android:hint="Event Till"
+                android:layout_height="wrap_content"
+                app:startIconDrawable="@drawable/baseline_calendar_month_24">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="8"
+                    android:id="@+id/add_event_till"
+                    android:paddingVertical="4dp"
+                    android:paddingHorizontal="7dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:background="@drawable/text_back"
+                    android:textSize="18sp"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/primary"
+                android:background="#F3C1C0C0"
+                android:elevation="25dp"
+                android:id="@+id/event_btn_cancel"
+                android:text="Cancel"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@color/primary"
+                android:elevation="25dp"
+                android:id="@+id/event_btn_submit"
+                android:textColor="@color/white"
+                android:text="Upload"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

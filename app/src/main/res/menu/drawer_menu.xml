@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Chats &amp; Groups"
+        android:icon="@drawable/chats_svgrepo_com"
+        android:id="@+id/opt_chats"
+        />
+    <item android:id="@+id/opt_Announcement"
+        android:icon="@drawable/announcement_svgrepo_com"
+        android:title="Announcements"/>
+
+    <item android:id="@+id/opt_Event"
+        android:icon="@drawable/calendar_tick_svgrepo_com"
+        android:title="Events"/>
+
+    <item android:title="Profile"
+        android:icon="@drawable/profile_round_1342_svgrepo_com"
+        android:id="@+id/opt_profile"
+        />
+
+
+
+    <group android:title="Setting"
+        android:id="@+id/llllllll">
+        <item android:title="Cuims"
+            android:icon="@drawable/browser_ie_svgrepo_com"
+            android:id="@+id/opt_Cuims"
+            />
+
+        <item android:title="About us"
+            android:icon="@drawable/about_svgrepo_com"
+            android:id="@+id/opt_about"
+            />
+    </group>
+
+    <group
+        android:title="Logout"
+        android:id="@+id/log_out">
+    <item android:title="Logout"
+        android:icon="@drawable/logout_circle_svgrepo_com"
+        android:id="@+id/opt_logout"
+        />
+    </group>
+
+
+</menu>

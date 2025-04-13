@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/announcements_back"
+    android:layout_marginVertical="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="15dp"
+        android:elevation="25dp">
+        <TextView
+            android:layout_marginHorizontal="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Copyright (c) 2010, 2024, Oracle and/or its affiliates."
+            android:textSize="22sp"
+            android:layout_marginTop="2dp"
+            android:paddingHorizontal="7dp"
+            android:paddingVertical="4dp"
+            android:background="@drawable/text_back"
+            android:id="@+id/announcement_title"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_marginHorizontal="2dp"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="8dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_back"
+            android:paddingHorizontal="7dp"
+            android:paddingVertical="4dp"
+            android:id="@+id/announcement_body"
+            android:text="This program is designed to work with certain software that is licensed under separate terms, as designated in a particular file or component or in
+ included license documentation. The authors of MySQL hereby grant you an additional permission to link the program and your derivative works with the
+ separately licensed software that they have either included with the program or referenced in the documentation.
+ version 1.0, a copy of which can be found at http://oss.oracle.com/licenses/universal-foss-exception."
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="~By Rahul Sharma (22bca10647)"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="12dp"
+            android:textColor="#000"
+            android:id="@+id/announcement_user"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="16sp"
+
+            android:layout_marginStart="16dp"
+            android:textColor="#000"
+            android:id="@+id/announcement_timeStamp"
+            android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

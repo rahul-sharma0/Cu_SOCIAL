@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Signup_activity"
+    android:background="@drawable/signup_bg">
+
+
+    <io.alterac.blurkit.BlurLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/signup_blur"
+        app:blk_blurRadius="2"
+        app:blk_fps="0"
+        android:elevation="25dp"
+        android:layout_marginVertical="15dp"
+        android:layout_marginHorizontal="35dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="35dp"
+            android:textSize="36sp"/>
+
+
+    <LinearLayout
+        android:id="@+id/Signup_layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="College Email-Id"
+            android:layout_marginVertical="7dp"
+            style="@style/Widget.Design.TextInputLayout"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/white"
+            android:textColorHint="@color/white"
+            app:startIconTint="@color/white"
+            app:counterEnabled="true"
+            android:focusable="false"
+            app:counterTextColor="@color/white"
+            app:counterMaxLength="20"
+            app:startIconDrawable="@drawable/id_card_svgrepo_com">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_emailId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ems="12"
+            android:textColor="@color/white"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            app:startIconDrawable="@drawable/user_shield_alt_1_svgrepo_com"
+            style="@style/Widget.Design.TextInputLayout"
+            app:counterEnabled="true"
+            android:focusable="false"
+            android:textColorHint="@color/white"
+            app:endIconTint="@color/white"
+            app:counterTextColor="@color/white"
+            app:startIconTint="@color/white"
+            app:counterMaxLength="45"
+            app:endIconMode="clear_text"
+            android:layout_marginVertical="7dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="45"
+            android:ems="12"
+            android:textColor="@color/white"
+            android:inputType="text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Contact Number"
+            android:layout_marginVertical="7dp"
+            style="@style/Widget.Design.TextInputLayout"
+            app:counterEnabled="true"
+            android:focusable="false"
+            app:endIconTint="@color/white"
+            app:counterMaxLength="10"
+            app:counterTextColor="@color/white"
+            android:textColorHint="@color/white"
+            app:startIconTint="@color/white"
+            app:startIconDrawable="@drawable/phone_call_1_svgrepo_com"
+            app:endIconMode="clear_text"
+            app:prefixText="+91-">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:textColor="@color/white"
+            android:inputType="phone"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--    <EditText-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginVertical="7dp"-->
+        <!--        android:ems="12"-->
+        <!--        android:hint="Class &amp; Section"-->
+        <!--        android:textSize="18sp"-->
+        <!--        android:id="@+id/txt_class_section"-->
+        <!--        android:textStyle="bold"/>-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:startIconDrawable="@drawable/password_2_svgrepo_com"
+            style="@style/Widget.Design.TextInputLayout"
+            app:counterEnabled="true"
+            android:textColorHint="@color/white"
+            app:endIconTint="@color/white"
+            app:startIconTint="@color/white"
+            android:focusable="false"
+            app:counterTextColor="@color/white"
+            android:layout_marginVertical="7dp"
+            app:counterMaxLength="15"
+            app:endIconMode="password_toggle">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:ems="12"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="7dp"
+            android:hint="Re-enter Password"
+            app:startIconDrawable="@drawable/password_2_svgrepo_com"
+            app:endIconTint="@color/white"
+            style="@style/Widget.Design.TextInputLayout"
+            app:counterTextColor="@color/white"
+            app:counterEnabled="true"
+            android:textColorHint="@color/white"
+            app:startIconTint="@color/white"
+            app:counterMaxLength="15"
+            app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_reenter_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:ems="12"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/txt_class_section"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:ems="12"-->
+<!--            android:hint="Class &amp; Section"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold"/>-->
+
+
+        <!--    <com.google.android.gms.common.SignInButton-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="@string/app_name"/>-->
+
+        <TextView
+            android:id="@+id/txt_already_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an Account?"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginVertical="28dp"
+            android:layout_marginEnd="15dp"
+            android:background="#F4F4F4"
+            android:elevation="12dp"
+            android:text="Next"
+            android:textColor="@color/primary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/Signup_layout2"
+    android:visibility="gone"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/circular_image"
+        android:src="@drawable/add_camera_photo"
+        android:layout_marginBottom="35dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/status_list_1_svgrepo_com"
+        android:hint="Status Message"
+        android:textColorHint="@color/white"
+        app:endIconTint="@color/white"
+        app:startIconTint="@color/white"
+        android:layout_marginVertical="7dp"
+        style="@style/Widget.Design.TextInputLayout"
+        app:endIconMode="clear_text">
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:id="@+id/txt_status"
+        android:textStyle="bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:layout_marginVertical="12dp"
+        android:ems="10"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_previous"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_gravity="end"-->
+<!--        android:layout_marginVertical="28dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        android:background="@color/white"-->
+<!--        android:elevation="12dp"-->
+<!--        android:ems="7"-->
+<!--        android:text="Previous"-->
+<!--        android:textColor="@color/primary"-->
+<!--        android:textSize="15sp"-->
+<!--        android:textStyle="bold" />-->
+
+
+</LinearLayout>
+    </io.alterac.blurkit.BlurLayout>
+</LinearLayout>
