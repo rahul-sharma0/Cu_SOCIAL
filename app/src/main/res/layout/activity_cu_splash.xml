@@ -5,8 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/cu_bg"
+    android:background="@drawable/main_gate"
     android:gravity="center_vertical"
+    android:layout_margin="5dp"
     tools:context=".cu_splash">
     <io.alterac.blurkit.BlurLayout
         android:layout_width="match_parent"
@@ -14,13 +15,14 @@
         android:id="@+id/blur"
         app:blk_fps="0"
         android:layout_margin="30dp"
+        android:elevation="25dp"
         android:visibility="invisible"
         app:blk_blurRadius="1">
         <ImageView
             android:id="@+id/cu_logo"
-            android:layout_width="225dp"
-            android:layout_height="225dp"
-            android:src="@drawable/b"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:src="@drawable/cusocial_logo"
             android:layout_gravity="center"/>
 
 

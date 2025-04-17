@@ -207,14 +207,16 @@ public class Chat_Window_Act extends AppCompatActivity {
 //                proceedService(USERNAME);
 //                startActivity(new Intent(Chat_Window_Act.this,Calling_act.class).putExtra("username",USERNAME));
 
+//
                 String targetUserID = RECEIVER_UID; // The ID of the user you want to call.
                 String targetUserName = RECEIVER_NAME; // The username of the user you want to call.
-                Context context = getApplication(); // Android context.
+//                Context context = getApplicationContext() ; // Android context.
 
 //                ZegoSendCallInvitationButton button = new ZegoSendCallInvitationButton(context);
                 call.setIsVideoCall(false);
                 call.setResourceID("zego_uikit_call"); // Please fill in the resource ID name that has been configured in the ZEGOCLOUD's console here.
                 call.setInvitees(Collections.singletonList(new ZegoUIKitUser(targetUserID,targetUserName)));
+
 
 
             }
@@ -225,26 +227,26 @@ public class Chat_Window_Act extends AppCompatActivity {
             public void onClick(View v) {
                 String targetUserID = RECEIVER_UID; // The ID of the user you want to call.
                 String targetUserName = RECEIVER_NAME; // The username of the user you want to call.
-                Context context = getApplicationContext(); // Android context.
+//                Context context = getApplicationContext(); // Android context.
 
-//                ZegoSendCallInvitationButton Video = new ZegoSendCallInvitationButton(context);
+//                ZegoSendCallInvitationButton button = new ZegoSendCallInvitationButton(context);
                 video.setIsVideoCall(true);
                 video.setResourceID("zego_uikit_call"); // Please fill in the resource ID name that has been configured in the ZEGOCLOUD's console here.
                 video.setInvitees(Collections.singletonList(new ZegoUIKitUser(targetUserID,targetUserName)));
+
 
             }
         });
 
         Application application = getApplication(); // Android's application context
-        long appID = 1983194688;   // yourAppID
-        String appSign ="3d7024ab659811abfaabecfa7328997f142b35d71f39951fe08e99fee13b4424";  // yourAppSign
+        long appID = 456883046;   // yourAppID
+        String appSign ="9d704563532d464d257bc25217d07d5ce2e580a9a0b2fbb349c135344910bed0";  // yourAppSign
         String userID =firebaseAuth.getUid(); // yourUserID, userID should only contain numbers, English characters, and '_'.
-//        String userName =User_ID;   // yourUserName
+//        String userName = firebaseAuth.getUid();   // yourUserName
 
         ZegoUIKitPrebuiltCallInvitationConfig callInvitationConfig = new ZegoUIKitPrebuiltCallInvitationConfig();
 
         ZegoUIKitPrebuiltCallService.init(getApplication(), appID, appSign, userID, userID,callInvitationConfig);
-
 
     }
     void proceedService(String User_ID)
